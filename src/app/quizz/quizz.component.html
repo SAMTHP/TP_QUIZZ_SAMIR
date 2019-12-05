@@ -1,0 +1,16 @@
+<div class="row d-flex justify-content-center">
+    <button mat-raised-button color="primary" (click)="newGame()">Nouvelle partie</button>
+</div>
+
+<div *ngIf="startGame" class="d-flex justify-content-center">
+    <div class="container">
+        <div>
+            <h3 class="text-center">{{ questionsTests[currentQuestion].label }}</h3>
+        </div>
+        <div>
+            <div >
+                <!-- <button mat-raised-button color="primary" (click)="" *ngFor="let proposition of questionsTests[currentQuestion].propositions">{{ proposition }}</button> -->
+            </div>
+        </div>
+    </div>
+</div>
